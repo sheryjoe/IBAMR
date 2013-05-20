@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Ibamr : CMake-ified git fork for IBAMR " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ibamr</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ricortiz/IBAMR">View on GitHub</a>
+
+          <h1 id="project_title">Ibamr</h1>
+          <h2 id="project_tagline">CMake-ified git fork for IBAMR </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ricortiz/IBAMR/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ricortiz/IBAMR/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a href="https://code.google.com/p/ibamr">IBAMR</a> - CMake-ified git mirror</h1>
+
+<h2>What Is IBAMR?</h2>
+
+<p>IBAMR is a distributed-memory parallel implementation of the immersed boundary (IB) method with support for Cartesian grid adaptive mesh refinement (AMR). Support for distributed-memory parallelism is via MPI, the Message Passing Interface. Support for spatial adaptivity is via <a href="https://computation.llnl.gov/casc/SAMRAI">SAMRAI</a>, the Structured Adaptive Mesh Refinement Application Infrastructure, which is developed at the <a href="https://computation.llnl.gov/casc">Center for Applied Scientific Computing</a> at <a href="https://www.llnl.gov/">Lawrence Livermore National Laboratory</a>.</p>
+
+<p>This implementation of the IB method also makes extensive use of functionality provided by several high-quality third-party software libraries, including:</p>
+
+<ul>
+<li> <a href="http://www.mcs.anl.gov/petsc">PETSc</a>, the Portable, Extensible Toolkit for Scientific Computation,</li>
+<li> <a href="https://computation.llnl.gov/casc/hypre/software.html">hypre</a>, a library of high performance preconditioners that features parallel multigrid methods for both structured and unstructured grid problems,</li>
+<li> <a href="http://www.hdfgroup.org/HDF5">HDF5</a>, a general purpose library and file format for storing scientific data,</li>
+<li> <a href="http://sourceforge.net/projects/blitz">Blitz++</a>, a high-performance C++ array class library, and</li>
+<li> <a href="https://wci.llnl.gov/codes/silo">Silo</a>, a general purpose I/O library and file format for storing scientific data for visualization and post-processing.</li>
+</ul><p>IBAMR outputs visualization files that can be read by the <a href="https://wci.llnl.gov/codes/visit">VisIt Visualization Tool</a>. Work is also underway to implement support for finite element mechanics models in IBAMR via the <a href="http://libmesh.sourceforge.net/">libMesh</a> finite element library.</p>
+
+<h2>What Is the IB Method?</h2>
+
+<p>The immersed boundary (IB) method is a general-purpose numerical method for simulating fluid-structure interaction. The IB formulation of such problems uses an Eulerian description of the fluid and a Lagrangian description of the structure. Interaction equations that take the form of integral equations with delta function kernels couple the Eulerian and Lagrangian variables.</p>
+
+<p>For general information about the IB method, see <a href="http://math.nyu.edu/faculty/peskin">http://math.nyu.edu/faculty/peskin</a>. For visualizations of simulations that use IBAMR, see <a href="http://cims.nyu.edu/%7Egriffith">http://cims.nyu.edu/~griffith</a>.</p>
+
+<h2>Getting Started</h2>
+
+<ol>
+<li><a href="http://www.cmake.org">Download CMake</a></li>
+<li>
+<p><a href="http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">Clone the repository</a></p>
+
+<pre><code>$ git clone git://github.com/MSV-Project/IBAMR.git path_to_source/ibamr
+</code></pre>
+</li>
+<li>
+<p>CMake workflow:</p>
+
+<pre><code>$ mkdir ibamr-debug # Create out of source directory to build IBAMR
+$ cd ibamr-debug
+$ cmake path_to_source/ibamr # Generate necesary cmake files to build IBAMR
+$ ccmake path_to_source/ibamr # Customize build by modifying variables
+</code></pre>
+</li>
+</ol><p>Source code documentation for IBAMR is available <a href="http://ibamr.googlecode.com/svn/doc/ibamr/HEAD/html/annotated.html">on-line</a>. Source code documentation is also available for the <a href="http://ibamr.googlecode.com/svn/doc/ibtk/HEAD/html/annotated.html">IBTK support library</a>. File format documentation is also available <a href="http://ibamr.googlecode.com/svn/doc/ibamr/HEAD/html/classIBAMR_1_1IBStandardInitializer.html#_details">on-line</a>.</p>
+
+<p>Guidelines on how to <a href="https://code.google.com/p/ibamr/wiki/IBAMR_Development">contribute to the IBAMR</a> project.</p>
+
+<h2>Support</h2>
+
+<p>Support for IBAMR is available from the <a href="http://groups.google.com/group/ibamr-dev">IBAMR Developers</a> (ibamr-dev) Google Group. There is also list of frequently asked questions.</p>
+
+<h2>Bugs and Other Issues</h2>
+
+<p>Please use the Google Code issue tracking system to report bugs, feature requests, or other issues with IBAMR. A list of issues is available.</p>
+
+<h2>Acknowledgments</h2>
+
+<p>IBAMR development is supported in part by an NSF Software Infrastructure for Sustained Innovation award (NSF OCI 1047734). Work to extend IBAMR to support finite element mechanics models is also supported in part the NSF (NSF DMS 1016554). We gratefully acknowledge this support.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ibamr maintained by <a href="https://github.com/ricortiz">ricortiz</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
