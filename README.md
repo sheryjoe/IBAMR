@@ -26,13 +26,13 @@ Getting Started
 1. [Download CMake] (http://www.cmake.org)
 2. [Clone the repository] (http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository)
 
-        $ git clone git://github.com/MSV-Project/IBAMR.git
+        $ git clone git://github.com/MSV-Project/IBAMR.git path_to_source/ibamr
 3. CMake workflow:
 
         $ mkdir ibamr-debug # Create out of source directory to build IBAMR
         $ cd ibamr-debug
-        $ cmake source_directory # Generate necesary cmake files to build IBAMR
-        $ ccmake source_directory # Customize build by specifying variables
+        $ cmake path_to_source/ibamr # Generate necesary cmake files to build IBAMR
+        $ ccmake path_to_source/ibamr # Customize build by modifying variables
         
 Source code documentation for IBAMR is available [on-line] (http://ibamr.googlecode.com/svn/doc/ibamr/HEAD/html/annotated.html). Source code documentation is also available for the [IBTK support library](http://ibamr.googlecode.com/svn/doc/ibtk/HEAD/html/annotated.html). File format documentation is also available [on-line](http://ibamr.googlecode.com/svn/doc/ibamr/HEAD/html/classIBAMR_1_1IBStandardInitializer.html#_details).
 
