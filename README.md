@@ -1,4 +1,4 @@
-IBAMR - CMake-ified git mirror
+[IBAMR](https://code.google.com/p/ibamr) - CMake-ified git mirror
 =
 
 What Is IBAMR?
